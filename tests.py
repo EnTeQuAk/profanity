@@ -28,6 +28,7 @@ def process_words(words_text):
 whitelist = """
 scunthorpe
 assassin
+assassinscreed
 shitake
 shiitake
 circumspection
@@ -35,7 +36,13 @@ sussex
 cockburn
 ashita
 mauyamashita
+ashitaka
+fershita
+yamashita
+Aishiteru
+amanashitra
 """
+#WhoReallyCares
 
 blacklist = """
 cunt
@@ -43,7 +50,6 @@ shit
 shitty
 amotherfucker
 badmotherfucker
-shitsonstuff
 BadMothaFuckef
 BADMUTHAFUCKA
 BigFuckOffSpel
@@ -71,4 +77,52 @@ totoasshole
 eatthepoopoo
 eatshit2
 shiteater2
+fuckedyouup
+fuckencio
+fucker
+fuckerfucker
+fuckenshit
+TheDick
+thickdick
+Trevor2dicks
+Trickydick
+Uncle_Nigga
+youngniggacome
+anuthanigga
+bigassnigga
+Nastybitch
+niggabitch3217
+FCUK-Hero
+fcukme
+fcukoyu
+Buttholeyo
+asspoop
+gayaids
+EvilPenis
+homosapenis
+LordPenis
+noblepenis
+penis33152
+vaginaface
+vaginabasher
+Alottavagina
+Massive Vagina
+Mr.Pooper
+Mr.Pooperskank
+pooperino
+sirturdboy
+turdburglar
+turdface
+turdmuffin
+unicornturd
+wankerspanker
+Wankoff
+BigWanker
+Asswhore
+crack whore
+darkwhore
 """
+#bigfatdick
+#TheBigDick
+#thisgameisshit
+#TurdFurguson
