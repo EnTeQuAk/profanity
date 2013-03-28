@@ -54,7 +54,6 @@ def is_profane(text):
     words = split_words(text)
     for word in words:
         if word in profane_words:
-            print
             return True
 
     return False
