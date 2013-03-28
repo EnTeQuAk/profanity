@@ -1,6 +1,46 @@
-from nose.tools import assert_true, assert_false
+from nose.tools import assert_equal, assert_true, assert_false
 
-from profanity import is_profane
+from profanity import is_profane, split_words
+
+
+def test_split_words():
+    def check(text, words):
+        assert_equal(split_words(text), words)
+    for text, words in [
+        (
+            'brcqzxzzqyy',
+            ['brcqzxzzqyy'],
+        ),
+        (
+            'single',
+            ['single'],
+        ),
+        (
+            'saturday',
+            ['saturday'],
+        ),
+        (
+            'togetherback',
+            ['together', 'back'],
+        ),
+        (
+            'filesaveas',
+            ['file', 'save', 'as'],
+        ),
+        (
+            'thisisshit',
+            ['this', 'is', 'shit'],
+        ),
+        (
+            'crack whore',
+            ['crack', 'whore'],
+        ),
+        (
+            'wheninthecourseofhumanevents',
+            ['when', 'in', 'the', 'course', 'of', 'human', 'events'],
+        ),
+    ]:
+        yield check, text, words
 
 
 def test_whitelist():
@@ -29,20 +69,18 @@ whitelist = """
 scunthorpe
 assassin
 assassinscreed
-shitake
-shiitake
 circumspection
 sussex
 cockburn
 ashita
 mauyamashita
 ashitaka
-fershita
 yamashita
 Aishiteru
 amanashitra
+WhoReallyCares
+saturday
 """
-#WhoReallyCares
 
 blacklist = """
 cunt
@@ -121,8 +159,7 @@ BigWanker
 Asswhore
 crack whore
 darkwhore
+bigfatdick
+TheBigDick
+thisgameisshit
 """
-#bigfatdick
-#TheBigDick
-#thisgameisshit
-#TurdFurguson
