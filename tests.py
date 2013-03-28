@@ -25,10 +25,20 @@ def process_words(words_text):
     ]
 
 
-whitelist = process_words("""
+whitelist = """
 scunthorpe
-""")
+assassin
+shitake
+shiitake
+"""
+whitelist = process_words(whitelist)
 
-blacklist = process_words("""
+blacklist = """
 cunt
-""")
+shit
+shitty
+amotherfucker
+badmotherfucker
+BadMothaFuckef
+"""
+blacklist = process_words(blacklist)
