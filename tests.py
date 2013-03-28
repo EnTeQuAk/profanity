@@ -6,14 +6,14 @@ from profanity import is_profane
 def test_whitelist():
     def check(word):
         assert_false(is_profane(word), word)
-    for word in whitelist:
+    for word in process_words(whitelist):
         yield check, word
 
 
 def test_blacklist():
     def check(word):
         assert_true(is_profane(word), word)
-    for word in blacklist:
+    for word in process_words(blacklist):
         yield check, word
 
 
@@ -30,8 +30,12 @@ scunthorpe
 assassin
 shitake
 shiitake
+circumspection
+sussex
+cockburn
+ashita
+mauyamashita
 """
-whitelist = process_words(whitelist)
 
 blacklist = """
 cunt
@@ -39,6 +43,32 @@ shit
 shitty
 amotherfucker
 badmotherfucker
+shitsonstuff
 BadMothaFuckef
+BADMUTHAFUCKA
+BigFuckOffSpel
+henchfucktard
+hornyfuck
+cumbucket
+nigger123
+niggeratti
+niggerbang
+Niggerbicth
+niggerdick
+niggerfagbag
+niggerfaggot69
+niggerjoe
+niggerkiller
+Niggerloo
+niggermang
+niggershit
+niggerslave
+niggersmell
+niggerss
+niggertits
+dr.Faggot
+totoasshole
+eatthepoopoo
+eatshit2
+shiteater2
 """
-blacklist = process_words(blacklist)
