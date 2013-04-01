@@ -2,19 +2,18 @@
 # leetspeak
 
 import re
+import os.path
 
 
-def make_split_regex(word_list):
-    def key(word):
-        return -len(word), word
-    word_list = list(word_list)
-    word_list.sort(key=key)
-    return re.compile(r'(%s)' % '|'.join(word_list))
-
+def _data_file(filename):
+    return os.path.join(
+        os.path.dirname(__file__),
+        filename,
+    )
 
 profane_words = set()
 obvious_profane_words = set()
-with open('profane_words.txt') as f:
+with open(_data_file('profane_words.txt')) as f:
     for line in f.readlines():
         word = line.strip().lower()
         if word == '':
@@ -27,10 +26,9 @@ with open('profane_words.txt') as f:
         if len(word) >= 6:
             obvious_profane_words.add(word)
         profane_words.add(word)
-profane_regex = make_split_regex(profane_words)
 
 word_frequency = {}
-with open('word_frequency.txt') as f:
+with open(_data_file('word_frequency.txt')) as f:
     for line in f.readlines():
         row = line.strip().lower().split()
         freq = float(row[0])
