@@ -39,6 +39,13 @@ with open('word_frequency.txt') as f:
 
 
 def is_profane(text):
+    return (
+        _is_profane(text) or
+        _is_profane(remove_leet(text))
+    )
+
+
+def _is_profane(text):
     # Preprocessing.
     text = text.lower()
     text = re.sub(r'[^a-z]+', ' ', text)
@@ -91,6 +98,20 @@ def split_words(text):
         words.extend(split)
 
     return words
+
+
+def remove_leet(text):
+    tr = {
+        '0': 'o',
+        '1': 'i',
+        '|': 'i',
+        '3': 'e',
+        '5': 's',
+    }
+    return ''.join(
+        tr.get(c, c)
+        for c in text
+    )
 
 
 if __name__ == '__main__':

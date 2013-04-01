@@ -80,6 +80,16 @@ Aishiteru
 amanashitra
 WhoReallyCares
 saturday
+Hancock
+JohnHancock
+cockerel
+cockney
+cocktail
+connorpeacock
+dickinson
+adamdickinson
+brucedickings
+DickWasovski
 """
 
 blacklist = """
@@ -162,4 +172,25 @@ darkwhore
 bigfatdick
 TheBigDick
 thisgameisshit
+CockMonger
+poopcock
+poopdick13
+poopycock
+poopydick
+Pound&Fuck
+pussyncock
+cockandballs
+cocksalot
+CocksAreNice
+cravecock
+bigdickhead
+dickhead222
+dickhead74
+dicksuckerz
+hejdickhead
+H0LySh1t
 """
+#TODO blacklist testcases
+#CRAVExCOCK
+#cockslayer
+#cocknballs
