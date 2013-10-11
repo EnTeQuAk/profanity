@@ -10,6 +10,7 @@ setup(
     license='BSD',
     version='0.1.0',
     packages=find_packages('.'),
+    tests_require=['nose'],
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Intended Audience :: Developers',
@@ -21,4 +22,5 @@ setup(
     ],
     zip_safe=True,
     include_package_data=True,
+    test_suite='nose.collector',
 )
