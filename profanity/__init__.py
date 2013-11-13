@@ -73,7 +73,7 @@ def split_words(text):
         if not text:
             return 1, []
         best_freq, best_split = word_frequency.get(text, 0), [text]
-        for i in xrange(1, len(text)):
+        for i in range(1, len(text)):
             word, remainder = text[:i], text[i:]
             freq = word_frequency.get(word, None)
             if freq:
