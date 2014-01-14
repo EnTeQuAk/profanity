@@ -3,13 +3,12 @@
 
 import re
 import os.path
+import pkg_resources
 
 
 def _data_file(filename):
-    return os.path.join(
-        os.path.dirname(__file__),
-        filename,
-    )
+    return pkg_resources.resource_filename(__name__, filename)
+
 
 profane_words = set()
 obvious_profane_words = set()
