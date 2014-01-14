@@ -2,8 +2,8 @@
 Profanity
 =========
 
-.. image:: https://travis-ci.org/christian-oudard/profanity.png?branch=master
-        :target: https://travis-ci.org/christian-oudard/profanity
+.. image:: https://travis-ci.org/EnTeQuAk/unfromm.png?branch=master
+        :target: https://travis-ci.org/EnTeQuAk/unfromm
 
-.. image:: https://pypip.in/d/profanity/badge.png
-        :target: https://crate.io/packages/profanity?version=latest
+.. image:: https://pypip.in/d/unfromm/badge.png
+        :target: https://crate.io/packages/unfromm?version=latest

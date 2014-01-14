@@ -2,13 +2,13 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='profanity',
+    name='unfromm',
     description='Simple profanity filter.',
-    author='Christian Oudard',
-    author_email='christian.oudard@gmail.com',
-    url='https://github.com/christian-oudard/profanity',
+    author='Christopher Grebs',
+    author_email='cg@webshox.org',
+    url='https://github.com/EnTeQuAk/unfromm/',
     license='BSD',
-    version='0.1.0',
+    version='0.2.0',
     packages=find_packages('.'),
     tests_require=['nose'],
     classifiers=[
@@ -18,7 +18,9 @@ setup(
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
+        'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3.3',
     ],
     zip_safe=True,
     include_package_data=True,

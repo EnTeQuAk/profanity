@@ -1,6 +1,6 @@
 from nose.tools import assert_equal, assert_true, assert_false
 
-from profanity import is_profane, split_words
+from unfromm import is_profane, split_words
 
 
 def test_split_words():
