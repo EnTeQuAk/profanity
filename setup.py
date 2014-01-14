@@ -23,6 +23,8 @@ setup(
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.3',
         'Topic :: Software Development :: Libraries :: Python Modules',
+        'Topic :: Utilities',
+        'Topic :: Text Processing :: Filters',
     ],
     zip_safe=False,
     include_package_data=True,
