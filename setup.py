@@ -9,7 +9,7 @@ setup(
     url='https://github.com/EnTeQuAk/unfromm/',
     license='BSD',
     version='0.2.0',
-    packages=find_packages('.'),
+    packages=find_packages(exclude=['tests*']),
     tests_require=['nose'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
