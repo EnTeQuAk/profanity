@@ -8,7 +8,7 @@ setup(
     author_email='cg@webshox.org',
     url='https://github.com/EnTeQuAk/unfromm/',
     license='BSD',
-    version='0.2.0',
+    version='0.2.1',
     packages=find_packages(exclude=['tests*']),
     tests_require=['nose'],
     classifiers=[
